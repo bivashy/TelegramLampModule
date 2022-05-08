@@ -28,7 +28,7 @@ public class TelegramHandler extends BaseCommandHandler implements TelegramComma
 		return bot;
 	}
 
-	public List<TelegramHandler> getInstances() {
+	public static List<TelegramHandler> getInstances() {
 		return Collections.unmodifiableList(INSTANCES);
 	}
 }
