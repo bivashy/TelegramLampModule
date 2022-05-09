@@ -8,6 +8,8 @@ public interface DispatchSource {
 
 	String getExecutionText();
 	
+	Identificator getChatIdentficator();
+	
 	Identificator getSourceIdentificator();
 	
 	User getAuthor();

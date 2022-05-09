@@ -26,13 +26,18 @@ public class MessageDispatchSource implements DispatchSource {
 	public User getAuthor() {
 		return message.from();
 	}
-	
-	public Message getMessage() {
-		return message;
-	}
 
 	@Override
 	public Identificator getSourceIdentificator() {
 		return new LongIdentificator(message.messageId());
+	}
+
+	@Override
+	public Identificator getChatIdentficator() {
+		return new LongIdentificator(message.chat().id());
+	}
+
+	public Message getMessage() {
+		return message;
 	}
 }
