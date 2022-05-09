@@ -11,7 +11,7 @@
 		<manifest.contact>https://vk.me/bbaty45/</manifest.contact>
 		<manifest.developer>Ubivashka</manifest.developer>
 		<manifest.version>${project.version}</manifest.version>
-		<java.version>17</java.version>
+		<java.version>8</java.version>
 
 		<!-- Dependencies -->
 		<lamp-library.version>3.0.4</lamp-library.version>
