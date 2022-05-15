@@ -7,13 +7,13 @@ public interface DispatchSource {
 	String getText();
 
 	String getExecutionText();
-	
+
 	Identificator getChatIdentficator();
-	
+
 	Identificator getSourceIdentificator();
-	
+
 	User getAuthor();
-	
+
 	default <T extends DispatchSource> T as(Class<T> clazz) {
 		return clazz.cast(this);
 	}

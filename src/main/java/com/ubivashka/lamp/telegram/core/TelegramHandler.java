@@ -16,11 +16,11 @@ public class TelegramHandler extends BaseCommandHandler implements TelegramComma
 
 	public TelegramHandler(TelegramBot bot) {
 		this.bot = bot;
-		
+
 		setExceptionHandler(new DefaultExceptionHandler());
 		registerDependency(TelegramBot.class, bot);
 		registerSenderResolver(TelegramSenderResolver.INSTANCE);
-		
+
 		INSTANCES.add(this);
 	}
 
