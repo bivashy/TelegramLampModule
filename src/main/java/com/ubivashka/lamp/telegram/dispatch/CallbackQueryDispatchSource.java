@@ -3,8 +3,6 @@ package com.ubivashka.lamp.telegram.dispatch;
 import com.pengrad.telegrambot.model.CallbackQuery;
 import com.pengrad.telegrambot.model.User;
 import com.ubivashka.lamp.telegram.dispatch.identificator.Identificator;
-import com.ubivashka.lamp.telegram.dispatch.identificator.LongIdentificator;
-import com.ubivashka.lamp.telegram.dispatch.identificator.StringIdentificator;
 
 public class CallbackQueryDispatchSource implements DispatchSource {
 	private final CallbackQuery callbackQuery;
@@ -30,13 +28,13 @@ public class CallbackQueryDispatchSource implements DispatchSource {
 
 	@Override
 	public Identificator getSourceIdentificator() {
-		return new StringIdentificator(callbackQuery.id());
+		return Identificator.of(callbackQuery.id());
 	}
 
 	@Override
 	public Identificator getChatIdentficator() {
 		if (callbackQuery.message() != null)
-			return new LongIdentificator(callbackQuery.message().chat().id());
+			return Identificator.of(callbackQuery.message().chat().id());
 		return null;
 	}
 

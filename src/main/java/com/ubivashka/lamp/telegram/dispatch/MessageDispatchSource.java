@@ -3,7 +3,6 @@ package com.ubivashka.lamp.telegram.dispatch;
 import com.pengrad.telegrambot.model.Message;
 import com.pengrad.telegrambot.model.User;
 import com.ubivashka.lamp.telegram.dispatch.identificator.Identificator;
-import com.ubivashka.lamp.telegram.dispatch.identificator.LongIdentificator;
 
 public class MessageDispatchSource implements DispatchSource {
 	private final Message message;
@@ -29,12 +28,12 @@ public class MessageDispatchSource implements DispatchSource {
 
 	@Override
 	public Identificator getSourceIdentificator() {
-		return new LongIdentificator(message.messageId());
+		return Identificator.of(message.messageId());
 	}
 
 	@Override
 	public Identificator getChatIdentficator() {
-		return new LongIdentificator(message.chat().id());
+		return Identificator.of(message.chat().id());
 	}
 
 	public Message getMessage() {
