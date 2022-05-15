@@ -36,14 +36,14 @@ public class BaseTelegramActor implements TelegramActor {
 
 	@Override
 	public void reply(@NotNull String message) {
-		SendMessage sendMessage = new SendMessage(dispatchSource.getSourceIdentificator().asObject(),
+		SendMessage sendMessage = new SendMessage(dispatchSource.getChatIdentficator().asObject(),
 				commandHandler.getMessagePrefix() + message);
 		commandHandler.getBot().execute(sendMessage);
 	}
 
 	@Override
 	public void error(@NotNull String message) {
-		reply(commandHandler.getMessagePrefix() + message);
+		reply(message);
 	}
 
 	@Override
