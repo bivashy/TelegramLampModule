@@ -8,6 +8,7 @@ import com.pengrad.telegrambot.TelegramBot;
 import com.ubivashka.lamp.telegram.TelegramCommandHandler;
 
 import revxrsal.commands.core.BaseCommandHandler;
+import revxrsal.commands.exception.DefaultExceptionHandler;
 
 public class TelegramHandler extends BaseCommandHandler implements TelegramCommandHandler {
 	private static final List<TelegramHandler> INSTANCES = Collections.synchronizedList(new ArrayList<>());
@@ -16,8 +17,8 @@ public class TelegramHandler extends BaseCommandHandler implements TelegramComma
 	public TelegramHandler(TelegramBot bot) {
 		this.bot = bot;
 		
+		setExceptionHandler(new DefaultExceptionHandler());
 		registerDependency(TelegramBot.class, bot);
-
 		registerSenderResolver(TelegramSenderResolver.INSTANCE);
 		
 		INSTANCES.add(this);
