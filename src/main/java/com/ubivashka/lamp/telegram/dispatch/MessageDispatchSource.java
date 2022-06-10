@@ -6,14 +6,19 @@ import com.ubivashka.lamp.telegram.dispatch.identificator.Identificator;
 
 public class MessageDispatchSource implements DispatchSource {
 	private final Message message;
+	private String messageText;
 
 	public MessageDispatchSource(Message message) {
 		this.message = message;
+		if(message.text()!=null)
+			messageText = message.text();
+		if(message.caption()!=null)
+			messageText = message.caption();
 	}
 
 	@Override
 	public String getText() {
-		return message.text();
+		return messageText;
 	}
 
 	@Override
