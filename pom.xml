@@ -14,7 +14,7 @@
 		<java.version>8</java.version>
 
 		<!-- Dependencies -->
-		<lamp-library.version>3.0.4</lamp-library.version>
+		<lamp-library.version>3.1.5</lamp-library.version>
 		<telegram-library.version>6.0.1</telegram-library.version>
 
 		<!-- Maven plugins -->
