@@ -1,15 +1,15 @@
-package com.ubivashka.lamp.telegram.core;
+package com.bivashy.lamp.telegram.core;
 
 import java.util.UUID;
 import java.util.function.Supplier;
 
 import org.jetbrains.annotations.NotNull;
 
+import com.bivashy.lamp.telegram.dispatch.DispatchSource;
 import com.pengrad.telegrambot.model.User;
 import com.pengrad.telegrambot.request.SendMessage;
-import com.ubivashka.lamp.telegram.TelegramActor;
-import com.ubivashka.lamp.telegram.TelegramCommandHandler;
-import com.ubivashka.lamp.telegram.dispatch.DispatchSource;
+import com.bivashy.lamp.telegram.TelegramActor;
+import com.bivashy.lamp.telegram.TelegramCommandHandler;
 
 import revxrsal.commands.CommandHandler;
 

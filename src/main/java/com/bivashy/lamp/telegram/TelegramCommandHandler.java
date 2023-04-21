@@ -1,4 +1,4 @@
-package com.ubivashka.lamp.telegram;
+package com.bivashy.lamp.telegram;
 
 import com.pengrad.telegrambot.TelegramBot;
 

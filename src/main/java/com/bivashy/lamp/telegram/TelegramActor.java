@@ -1,8 +1,8 @@
-package com.ubivashka.lamp.telegram;
+package com.bivashy.lamp.telegram;
 
+import com.bivashy.lamp.telegram.core.BaseTelegramActor;
+import com.bivashy.lamp.telegram.dispatch.DispatchSource;
 import com.pengrad.telegrambot.model.User;
-import com.ubivashka.lamp.telegram.core.BaseTelegramActor;
-import com.ubivashka.lamp.telegram.dispatch.DispatchSource;
 
 import revxrsal.commands.command.CommandActor;
 

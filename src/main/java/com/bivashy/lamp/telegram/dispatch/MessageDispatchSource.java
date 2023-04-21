@@ -1,8 +1,8 @@
-package com.ubivashka.lamp.telegram.dispatch;
+package com.bivashy.lamp.telegram.dispatch;
 
+import com.bivashy.lamp.telegram.dispatch.identificator.Identificator;
 import com.pengrad.telegrambot.model.Message;
 import com.pengrad.telegrambot.model.User;
-import com.ubivashka.lamp.telegram.dispatch.identificator.Identificator;
 
 public class MessageDispatchSource implements DispatchSource {
 	private final Message message;

@@ -1,10 +1,10 @@
-package com.ubivashka.lamp.telegram.core;
+package com.bivashy.lamp.telegram.core;
 
 import org.jetbrains.annotations.NotNull;
 
+import com.bivashy.lamp.telegram.dispatch.DispatchSource;
 import com.pengrad.telegrambot.model.User;
-import com.ubivashka.lamp.telegram.TelegramActor;
-import com.ubivashka.lamp.telegram.dispatch.DispatchSource;
+import com.bivashy.lamp.telegram.TelegramActor;
 
 import revxrsal.commands.command.CommandActor;
 import revxrsal.commands.command.ExecutableCommand;

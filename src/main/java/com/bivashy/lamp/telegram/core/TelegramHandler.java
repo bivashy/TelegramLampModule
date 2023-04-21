@@ -1,11 +1,11 @@
-package com.ubivashka.lamp.telegram.core;
+package com.bivashy.lamp.telegram.core;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 import com.pengrad.telegrambot.TelegramBot;
-import com.ubivashka.lamp.telegram.TelegramCommandHandler;
+import com.bivashy.lamp.telegram.TelegramCommandHandler;
 
 import revxrsal.commands.core.BaseCommandHandler;
 import revxrsal.commands.exception.DefaultExceptionHandler;

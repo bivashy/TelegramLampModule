@@ -1,4 +1,4 @@
-package com.ubivashka.lamp.telegram.dispatch.identificator;
+package com.bivashy.lamp.telegram.dispatch.identificator;
 
 public class LongIdentificator implements Identificator {
 	private final long identificator;

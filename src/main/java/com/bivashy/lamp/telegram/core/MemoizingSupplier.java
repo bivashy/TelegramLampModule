@@ -1,4 +1,4 @@
-package com.ubivashka.lamp.telegram.core;
+package com.bivashy.lamp.telegram.core;
 
 import static revxrsal.commands.util.Preconditions.notNull;
 
